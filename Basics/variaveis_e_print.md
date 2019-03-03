@@ -80,9 +80,7 @@ print(string1,numero) # saida: 'melhor de 3'
 numero = 2
 numero = numero + 2 # atualiza o valor do numero para quatro
 
-# forma 
-
-
-
-
+# podemos colocar espaços e novas linhas
+print("\tPython") #coloca um tab no texto
+print("\nPython") #colocao texto numa nova linha
 ```
