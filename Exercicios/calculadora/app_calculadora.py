@@ -1,12 +1,8 @@
-# ESTE ARQUIVO É PARA TESTAR E COMPILAR OS MÉTODOS DO ARQUIVO metodos_calculadora.py
+# from nome_arquivo import nome_classe
+from metodos_calculadora import Metodos_Calculadora
 
-# agora iremos importar os métodos do arquivo metodos_calculadora do diretorio calculadora
-# from nome_diretorio import nome_arquivo
-import Metodos_Calculadora
-
-# cria-se uma instancia da classe importada, dando os valores de entrada
 instancia_classe = Metodos_Calculadora(4,5)
 print("Soma dos valores de entrada: ", instancia_classe.soma())
-print("Subtração dos valores de entrada: ", instancia_classe.subtracao())
-print("Multiplicação dos valores de entrada: ", instancia_classe.multiplicacao)
-print("Divisao dos valores de entrada: ", instancia_classe.divisao())
+print("Subtracao dos valores de entrada: ", instancia_classe.sub())
+print("Multiplicacao dos valores de entrada: ", instancia_classe.multi())
+print("Divisao dos valores de entrada: ", instancia_classe.div())

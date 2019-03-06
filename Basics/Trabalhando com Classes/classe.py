@@ -26,17 +26,17 @@ class Classe(): # classes são organizadas por identação, se sabe que as infos
         return soma
     
     # SUBTRAÇÃO DE DOIS VALORES
-    def subtracao(self):
-        sub = self.a + self.b
-        return subtracao
+    def sub(self):
+        sub = self.a - self.b
+        return sub
 
     # MULTIPLICAÇÃO DE DOIS VALORES
-    def multiplicacao(self):
+    def multi(self):
         multi = self.a * self.b
         return multi
     
     # DIVISÃO DE DOIS VALORES
-    def divisao(self):
+    def div(self):
         # abaixo uma estrutura de if/else
         if self.a > self.b:
             div = self.b / self.a 
