@@ -1,5 +1,5 @@
 # para criar uma classe, faça como abaixo
-class Classe(): # classes são organizadas por identação, se sabe que as infos estão dentro da classe por existir um tab 
+class Metodos_Calculadora(): # classes são organizadas por identação, se sabe que as infos estão dentro da classe por existir um tab 
     
     
     # OBSERVAÇÃO:  todos os métodos dentro de uma classe deve iniciar com self
@@ -47,3 +47,10 @@ class Classe(): # classes são organizadas por identação, se sabe que as infos
 
     # COM ESSES MÉTODOS, TEMOS UMA CLASSE COM MÉTODOS DE CALCULO
     # ESSA CLASSE IRÁ SER CHAMADA PARA OUTRO ARQUIVO CHAMADO APP_CALCULO
+
+    # cria-se uma instancia da classe importada, dando os valores de entrada
+instancia_classe = Metodos_Calculadora(4,5)
+print("Soma dos valores de entrada: ", instancia_classe.soma())
+print("Subtração dos valores de entrada: ", instancia_classe.subtracao())
+print("Multiplicação dos valores de entrada: ", instancia_classe.multiplicacao)
+print("Divisao dos valores de entrada: ", instancia_classe.divisao())
