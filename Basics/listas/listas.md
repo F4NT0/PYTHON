@@ -85,4 +85,24 @@ for magico in magicos:
     print(magico)
 # se lê: para cada mágico da lista mágicos, imprima o mágico desejado
 
+
+# 7) TRABALHANDO COM PARTE DE UMA LISTA
+
+
+# Podemos definir os limites de uma lista com [:]
+# Estrutura: lista[PosicaoInicial:PosicaoFinal]
+lista = ['1','2','3','4','5']
+print(lista[0:3]) # Saída: ['1','2','3']
+# se não definir a posição inicial, ele começa do inicio
+print(lista[:3]) # Saída: ['1','2','3']
+# se não definir a posição final, ele vai até o final
+print(lista[0:]) # Saída: ['1','2','3','4','5']
+print(lista[3:]) # Saída: ['3','4','5']
+
+# 8) COPIANDO UMA LISTA INTEIRA
+
+# podemos copiar uma lista inteira com o limitador da lista
+lista1 = ['1','2','3','4']
+lista2 = lista1[:] # ele irá copiar toda a lista para a outra
+# não podemos fazer a copia de outra forma
 ```

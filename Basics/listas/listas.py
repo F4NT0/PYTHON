@@ -43,5 +43,13 @@ print('\nLista Reversa: ', nomes)
 print('\nLendo uma lista com um For')
 for nome in nomes:
     print(nome)
+
+# usando o limitador para pegar os 2 elementos finais
+print('\npegando os ultimos elementos da lista')
+for nome in nomes[2:]:
+    print(nome)
+print('\npegando os primeiros elementos da lista')
+for nome in nomes[:2]:
+    print(nome)
     
 
