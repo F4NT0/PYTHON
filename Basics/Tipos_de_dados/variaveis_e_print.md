@@ -17,7 +17,7 @@ nome_complexo = 'F4NT0 D3V'
 print(nome_complexo) # imprime o nome complexo como na primeira variavel
 ```
 
-* Números armazenados em Variáveis
+### Números armazenados em Variáveis
 ```python
 
 # Números inteiros
@@ -54,8 +54,11 @@ exp = 2 ** 2 # o resultado é 4, por ser 2 elevado na 2
 # Modulo serve para poder conseguir o resto de uma divisão
 resto = 4 % 2  # o valor va variavel será zero, porque não tem resto
 resto_segundo = 5 % 3 # o valor da variavel será 1 devido que sobra 1 da divisão
+```
 
+### Trabalhando com Strings
 
+```python
 # Concatenação de Strings
 # usando o + podemos concatenar strings, mas elas se tornam juntas
 nome = 'gabriel'
@@ -83,4 +86,15 @@ numero = numero + 2 # atualiza o valor do numero para quatro
 # podemos colocar espaços e novas linhas
 print("\tPython") #coloca um tab no texto
 print("\nPython") #colocao texto numa nova linha
+```
+
+### Tipo de Dado Booleano
+* Booleano é sempre `True` ou `False`
+```python
+# CRIANDO VARIAVEL BOOLEANA
+valor = True
+valor_2 = False
+
+# Podemos usar os valores booleanos para teste condicionais
+# Para mais informações, visite á págin sobre if/else
 ```

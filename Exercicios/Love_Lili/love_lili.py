@@ -9,4 +9,4 @@ while amor <= lili:
     amor += 1 # aumenta o meu amor
     lili += 10000 # aumenta o amor da lili
     sleep(1) # tempo entre beijos
-    os.system('cls')
+    os.system('cls') limpa o terminal do windows
