@@ -195,9 +195,124 @@ if a >= b: # False, if não iniciado
 
 # MULTIPLOS TESTES
 
-if a < b and a <= b: # TRUE AND TRUE  = TRUE
-if a > b and a <= b: # FALSE AND TRUE = FALSE
-if     
+if a < b and a <= b: # TRUE  AND TRUE  = TRUE
+if a > b and a <= b: # FALSE AND TRUE  = FALSE
+if a < b and a >= b: # TRUE  AND FALSE = FALSE
+if a > b and a >= b: # FALSE AND FALSE = FALSE
+
+if a < b or a <= b: # TRUE  OR  TRUE  = TRUE
+if a > b or a <= b: # FALSE OR  TRUE  = TRUE
+if a < b or a >= b: # TRUE  OR  FALSE = TRUE
+if a > b or a >= b: # FALSE OR  FALSE = FALSE
 
 
+# VARIOS IFS UNICOS RODANDO EM SERIE
+
+a = 1
+b = 2
+c = 3
+d = 4
+
+if a < b: # podemos colocar um if dentro de outro if
+    if d > c: # este if somente ira ocorrer se o primeiro for true
+        pass
+
+if a < b: 
+    pass
+if d > c: # este if é externo, e ocorre msm se o primeiro for false
+    pass
+```
+
+**INSTRUÇÃO DE IF COM ELSE:**
+
+* quando a instrução do if for false e queremos que o programa faça algo com isso, criamos um `else` que irá ser ativado se o if der false
+
+```python
+
+# ESTRUTURA DE UM IF/ELSE
+
+if instrucao:
+    info
+else:
+    info
+
+# Exemplo completo de um if/else
+
+a = 2
+b = 2
+
+if a > b:
+    print("Este print não ocorre")
+else:
+    print("if deu falso, else ativou")
+```
+
+**INSTRUÇÃO IF-ELIF-ELSE**
+
+* quando queremos colocar mais opções de instruções, utilizamos o `elif` entre as opções, começando com um `if` e no fim terá um else
+
+_Como é em Java_
+
+```java
+
+// CONSTRUÇÃO DE INSTRUÇÕES EM JAVA
+if (intrucao){
+
+}else if(instrucao2){
+
+}else{
+
+}
+```
+_Como é em Python_
+
+```python
+# CONSTRUÇÃO DE MULTIPLAS INSTRUÇÕES EM PYTHON
+
+if instrucao:
+    intro
+elif instrucao:
+    intro
+else:
+    intro
+
+# EXEMPLO
+
+idade = 20
+
+if idade < 4: 
+    preco = 0
+elif idade >= 20:
+    preco = 40
+else:
+    preco = 100
+print(preco) # a saida vai ser 40
+
+# PODEMOS COLOCAR VARIOS ELIFS
+
+if idade < 4:
+    preco = 0
+elif idade == 10:
+    preco = 10
+elif idade <= 15:
+    preco = 20
+elif idade == 20:
+    preco = 40
+else:
+    preco = 60
+```
+
+**IF/ELSE COM LISTAS**
+
+* Podemos verificar se um elemento existe dentro da lista com if/else
+* Como o for anda por toda a lista, podemos usar um if para ver dentro da lista
+
+```python
+nomes = ['Gabriel','Pedro','Lili','Igor']
+
+for nome in nomes:
+    if nome == 'Gabriel':
+        print('Nome existe na lista')
+    else:
+        pass
 ```
