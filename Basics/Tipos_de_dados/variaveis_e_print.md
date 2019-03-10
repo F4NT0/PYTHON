@@ -98,3 +98,27 @@ valor_2 = False
 # Podemos usar os valores booleanos para teste condicionais
 # Para mais informações, visite á págin sobre if/else
 ```
+
+### Incrementando valores nas propria variaveis
+* Podemos incrementar valores em uma variavel de 3 formas:
+```python
+# incrementando um valor com ele mesmo
+valor = 0
+valor += 1 # é uma forma resumida de: valor = valor+1
+
+# decremantando um valor com ele mesmo
+valor = 1
+valor -= 1 # valor = valor - 1
+
+# multiplicando um valor com ele mesmo
+valor = 1
+valor *= 2 # valor = valor * 2
+
+# dividindo um valor com ele mesmo
+valor = 2
+valor /= 2 # valor = valor/2
+
+
+
+
+```
