@@ -1,6 +1,14 @@
-## Bem vindo ao Repositório sobre Python
+## BEM VINDO AO REPOSITORIO DE PYTHON
 
-* Os diretórios desse Repositório funcionam da seguinte forma:
-    1. Basics: diretório com os códigos do básico de python
-    2. Advanced: diretório com os códigos mais avançados de python
-    3. Random: códigos aleatórios encontrados
+* Este repositório foi criado para organizar todo o básico da **linguagem Python** para desenvolvimento, servido como um guia para quem não aprendeu ainda a programar nessa linguagem
+
+**`Wiki de Python`**
+
+Se deseja aprender Python de Forma organizada Acesse a Wiki deste Repositório neste [Link](https://github.com/F4NT0/Python_Basics/wiki)
+
+
+**`Organização dos Diretórios:`**
+1. Diretório **Basics**: é o diretorio onde se encontra como funciona a linguagem e suas estruturas
+2. Diretório **Exercicios**: é o diretorio onde se encontra exercicios e testes de programas em Python
+
+![python](https://www.github.com/F4NT0/Python_Basics/Images/python.gif)
