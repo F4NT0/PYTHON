@@ -22,6 +22,7 @@ Para podermos parar um while, tem algumas formas:
 * Definimos que a instrução do while tem um `momento limite`(ou seja, a instrucao vai parar sozinha depois de um tempo)
 * Alteramos o valor booleano de uma variavel, onde antes era `True` e colocamos como `False`
 * Podemos usar a palavra reservada `break` para finalizar o laço bruscamente, onde ele ira continuar o código escrito fora do while
+* Podemos usar a palavra reservada `continue` para voltar ao inicio do laço quando quisermos, ignorando o resto que vem após
 
 ```python
 # EXEMPLO 1
@@ -43,12 +44,25 @@ while booleano:
     stop = input('Deseja parar o while? S/N: ')
     if stop == 'S':
         print('Parando o While...')
-        booleano = False
+        booleano = False 
     elif stop == 'N':
         print('Continuando o While...')
         # Não precisa alterar o valor do booleano
     else:
         print('Valor não aceito!')
         break #para o while bruscamente
+
+# EXEMPLO 3
+ booleano = True
+ while booleano:
+     if booleano == True:
+        parada = input('Deseja iniciar de novo? S/N : ')
+        if parada == 'S' or parada == 's':
+            continue
+        elif parada == 'N' or parada == 'n':
+            booleano = False
+        else:
+            print('Entrada invalida! encerrando...')
+            break
 ```
 

@@ -37,3 +37,17 @@ while booleano:
         print('Valor não aceito!')
         break
 
+# TESTANDO O CONTINUE
+
+booleano = True
+while booleano:
+    if booleano == True:
+        parada = input('Deseja iniciar de novo? S/N : ')
+        if parada == 'S' or parada == 's':
+            continue
+        elif parada == 'N' or parada == 'n':
+            booleano = False
+        else:
+            print('Entrada invalida! encerrando...')
+            break
+
