@@ -14,14 +14,13 @@ while booleano:
     valor_entrada = int(valor_entrada) # transforma a string de entrada em um valor inteiro
     valores.append(valor_entrada) # adicionado o valor na posicao
     contador_posicao += 1 # incrementando o contador
-    restart = input('Deseja adicionar mais valores? S/N : ')
+    restart = input('Deseja adicionar mais valores? S/N : \n')
     if restart.lower() == 's' or restart.upper() == 'S':
-        booleano = True
-        pass
+        continue
     elif restart.lower() == 'n' or restart.upper() == 'N':
         booleano = False
         reinicio = False
-        pass
+        break
     else:
         print('Entrada invalida! ')
         break
