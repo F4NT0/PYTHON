@@ -64,47 +64,47 @@ add_pos(2,'RODRIGO',nomes)
 
 print(nomes)
 
-# # Retirando o ultimo elemento
-# elemento_retirado = nomes.pop()
-# print('\n2) Retirado o ultimo elemento com pop()\n')
-# print('Elemento retirado: ', elemento_retirado)
-# print('Lista: ', nomes)
+# Retirando o ultimo elemento
+print('\n2) Retirado o ultimo elemento com pop()\n')
+elemento_retirado = nomes.pop()
+print('Elemento retirado: ', elemento_retirado)
+print('Lista: ', nomes)
 
-# # Retirando o segundo elemento da lista
-# elemento_retirado2 = nomes.pop(1)
-# print('\nRetirado o segundo elemento da lista')
-# print('Elemento removido: ', elemento_retirado2)
-# print('Lista: ', nomes)
+# Retirando o segundo elemento da lista
+print('\nRetirado o segundo elemento da lista')
+elemento_retirado_2 = nomes.pop(1)()
+print('Elemento removido: ', elemento_retirado_2)
+print('Lista: ', nomes)
 
-# # Adicionando novamente os elementos na lista
-# nomes.append(elemento_retirado)
-# nomes.append(elemento_retirado2)
-# print('\nColocados os elementos retirados de volta')
-# print('Lista completa: ', nomes)
+# Removendo o elemento Johhny
+print('Adicionando o elemento Johnny para testar o remove()')
 
-# # Descobrindo o tamanho da lista
-# tamanho = len(nomes)
-# print('\ntamanho da lista: ', tamanho)
+# Descobrindo o tamanho da lista
+tamanho = len(nomes)
+print('\ntamanho da lista: ', tamanho)
 
-# # Ordenando uma lista
-# nomes.sort()
-# print('\nLista Ordenada: ', nomes)
+# Ordenando uma lista
+nomes.sort()
+print('\nLista Ordenada: ', nomes)
 
-# # Mostrando a lista de forma inversa
-# nomes.reverse()
-# print('\nLista Reversa: ', nomes)
+# Mostrando a lista de forma inversa
+nomes.reverse()
+print('\nLista Reversa: ', nomes)
 
-# # Lendo os elementos da lista com um laço for
-# print('\nLendo uma lista com um For')
-# for nome in nomes:
-#     print(nome)
+# Lendo os elementos da lista com um laço for
+print('\nLendo uma lista com um For')
+for nome in nomes:
+    print(nome)
 
-# # usando o limitador para pegar os 2 elementos finais
-# print('\npegando os ultimos elementos da lista')
-# for nome in nomes[2:]:
-#     print(nome)
-# print('\npegando os primeiros elementos da lista')
-# for nome in nomes[:2]:
-#     print(nome)
+# usando o limitador para pegar os 2 elementos finais
+print('\npegando os ultimos elementos da lista')
+for nome in nomes[2:]:
+        print(nome)
+print('\npegando os primeiros elementos da lista')
+for nome in nomes[:2]:
+    print(nome)
+print('\ncopiando toda a lista')
+copia_nome = nomes[:]
+print(copia_nome)
     
 
