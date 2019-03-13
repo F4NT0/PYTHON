@@ -165,6 +165,84 @@ lista_compras('Queijo','Presunto')
 lista_compras('Banana')
 
 ```
+### Trabalhando com Módulos
+
+* `Módulo` é um arquivo separado onde ficam as funções que desejam
+* Sempre definimos as funções com nomes descritivos para facilitar
+* Após definidos as funções e criado o Módulo que as armazenam, `importamos` o módulo nos programas que desenvolvemos.
+* **Usar Módulos facilita a reutilização de funções em vários programas**
+* Módulos devem ficar no mesmo Diretório que o arquivo do programa a ser desenvolvido
+* `Import` é a forma de transmitir as funções do Módulo no arquivo que desejamos desenvolver, assim deixamos o código limpo para poder trabalhar, o sistema de import funciona da seguinte forma:
+    * `import nomeModulo`: nomeModulo é o nome do arquivo que é o módulo
+    * `nomeModulo.nomeFuncao()`: quando queremos chamar uma função do arquivo de Módulo, dizemos qual módulo e o nome da função como mostrado.
+
+**EXEMPLO:**
+
+1. _ARQUIVO QUE É O MÓDULO_
+
+Nome do arquivo: calculadora.py
+```python
+
+def nome():
+    print('Bem vindo ao Módulo de Calculadora! ')
+
+def soma(valor_1,valor_2):
+    """ Função para fazer uma soma."""
+    soma = valor_1 + valor_2
+    return soma
+
+def sub(valor_1,valor_2):
+    """ Função para fazer uma subtração."""
+    sub = valor_1 - valor_2
+    return sub
+
+def multi(valor_1,valor_2):
+    """ Função para fazer uma multiplicação."""
+    multi = valor_1 * valor_2
+    return multi
+
+def div(valor_1,valor_2):
+    """ Função para fazer uma divisão."""
+    if valor_1 < valor_2:
+        div = valor_2 / valor_1
+        return div
+    elif valor_1 > valor_2:
+        div = valor_1 / valor_2
+        return div
+    else:
+        div = valor_1 / valor_2
+        return div
+
+def pot(base,expoente):
+    """ Função para fazer uma exponenciação."""
+    pot = base ** expoente
+    return pot
+```
+
+2. _ARQUIVO PRINCIPAL_
+
+* Arquivo no qual vai ser usado o Módulo
+* Este arquivo deve estar dentro do Diretório do Módulo
+
+**OBS:** se as funções tem return, devem ser armazenados em uma variavel, senão somente chama a função
+
+```python
+
+import calculadora # Fazendo um import 
+
+calculadora.nome() # chamada de uma função com print
+
+valor_1 = input('Digite o primeiro valor: ')
+valor_2 = input('Digite o segundo valor: ')
+
+# Transformando os valores de entrada em inteiros
+
+valor_1 = int(valor_1)
+valor_2 = int(valor_2)
+
+soma = calculadora.soma(valor_1,valor_2) # chamada de uma função com return
+print('Soma dos dois valores: ',soma)
+```
 
 
 

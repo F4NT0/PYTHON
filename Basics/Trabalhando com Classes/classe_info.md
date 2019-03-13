@@ -1,2 +1,4 @@
-# Criando classes
+# Criando classes 
+
+* Uma classe é uma coleção 
 
