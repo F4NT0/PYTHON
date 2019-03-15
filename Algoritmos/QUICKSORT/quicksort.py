@@ -48,7 +48,7 @@ while loop:
     quicksort(lista,0,len(lista)-1) # quicksort(lista,posicaoInicial,posicaoFinal)
     fim = time.time() # tempo final do quicksort
 
-    tempo_final = int((fim-inicio)*valor_maximo)
+    tempo_final = int((fim-inicio)*1000000) # tempo em milisegundos
 
     # 3) criando um arquivo que salva o valor_maximo e o tempo
     arquivo = open('quicksort.txt', 'a') # txt esta no mesmo dir que este arquivo/ a significa que vai ser add nova linha no final
