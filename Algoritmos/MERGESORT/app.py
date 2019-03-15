@@ -21,7 +21,7 @@ while loop:
     valor_maximo = int(valor_maximo)
 
     for i in range(valor_maximo):
-        lista.append(random.randint(0,valor_maximo)) #random.randomint(minimo,maximo) cria valores aleatorios inteiros
+        lista.append(random.randint(0,100)) #random.randomint(minimo,maximo) cria valores aleatorios inteiros
 
     # 2. Calculando o tempo de resolução do Algoritmo
 

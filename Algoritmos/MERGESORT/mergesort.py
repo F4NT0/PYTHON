@@ -16,13 +16,13 @@ def mergeSort(lista):
         contador_2 = 0 # da lista da metade direita
         contador_3 = 0 # da lista total
 
-        while contador_1 < len(metade_esq) and contador_2 < len(metade_dir)
+        while contador_1 < len(metade_esq) and contador_2 < len(metade_dir):
 
             if metade_esq[contador_1] < metade_dir[contador_2]:
                 lista[contador_3] = metade_esq[contador_1]
                 contador_1 += 1
             else:
-                lista[contador_3] = metade_esq[contador_2]
+                lista[contador_3] = metade_dir[contador_2]
                 contador_2 += 1
             contador_3 += 1
 
