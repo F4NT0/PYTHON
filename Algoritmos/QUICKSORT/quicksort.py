@@ -1,22 +1,23 @@
 # ARQUIVO COM AS FUNÇÕES DO QUICKSORT
 
-def partition(data, p, r):
+def partition(lista, pos_inicio, pos_fim):
     """ Função de Partição do QuickSort. (Versão Professor)"""
-    q = p;
-    for j in range(p,r):
-        if data[j] <= data[r]:
-            data[j], data[q] = data[q], data[j]
+    q = pos_inicio
+    pos_fim -= 1
+    for j in range(pos_inicio,pos_fim):
+        if lista[j] <= lista[pos_fim]:
+            lista[j], lista[q] = lista[q], lista[j]
             q += 1
-    data[r], data[q] = data[q], data[r]
+    lista[pos_fim], lista[q] = lista[q], lista[pos_fim]
     return q
 
 
-def quicksort(data, p, r):
+def quicksort(lista, pos_inicio, pos_fim):
     """ Função de QuickSort (Versão do Professor)"""
-    if p < r:
-        q = partition(data, p, r);
-        quicksort(data, p, q-1);
-        quicksort(data, q+1, r);
+    if pos_inicio < pos_fim:
+        q = partition(lista, pos_inicio, pos_fim)
+        quicksort(lista, pos_inicio, q-1)
+        quicksort(lista, q+1, pos_fim)
 
 
 
