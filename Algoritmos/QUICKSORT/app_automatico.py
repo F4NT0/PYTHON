@@ -16,7 +16,7 @@ while loop:
         lista.append(random.randint(0,valor))
 
     inicio = time.time()
-    quicksort.quicksort(lista,0,valor) # quicksort(lista,pos_inicio,pos_fim)
+    quicksort.quickSort(lista,0,valor) # quickSort(lista,pos_inicio,pos_fim)
     fim = time.time()
     
     tempo_final = int((fim-inicio)*1000000)

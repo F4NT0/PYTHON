@@ -4,6 +4,7 @@
 
 import random # cria numeros aleatorios
 import time # calcula o tempo
+import quicksort
 
 # VARIAVEIS
 lista = []
@@ -25,7 +26,7 @@ while loop:
     # 2) calculando o tempo
 
     inicio = time.time() # tempo de inicio do quicksort
-    quicksort(lista,0,len(lista)-1) # quicksort(lista,posicaoInicial,posicaoFinal)
+    quicksort.quickSort(lista,0,len(lista)-1) # quicksort(lista,posicaoInicial,posicaoFinal)
     fim = time.time() # tempo final do quicksort
 
     tempo_final = int((fim-inicio)*1000000) # tempo em milisegundos

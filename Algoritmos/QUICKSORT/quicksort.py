@@ -12,12 +12,12 @@ def partition(lista, pos_inicio, pos_fim):
     return q
 
 
-def quicksort(lista, pos_inicio, pos_fim):
+def quickSort(lista, pos_inicio, pos_fim):
     """ Função de QuickSort (Versão do Professor)"""
     if pos_inicio < pos_fim:
         q = partition(lista, pos_inicio, pos_fim)
-        quicksort(lista, pos_inicio, q-1)
-        quicksort(lista, q+1, pos_fim)
+        quickSort(lista, pos_inicio, q-1)
+        quickSort(lista, q+1, pos_fim)
 
 
 
