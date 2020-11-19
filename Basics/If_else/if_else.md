@@ -107,3 +107,46 @@ else:
     print("Menor de 18 anos")
 ```
 
+---
+
+## Exemplos
+
+1) Pegando dados por **Input** e fazendo a verificação completa:
+
+```python
+# entrada de texto para testar
+valor1 = input('Entre o primeiro valor para teste: ')
+# toda entrada entra como string, vamos definir como inteiro
+valor1 = int(valor1)
+
+valor2 = input('Entre o segundo valor para teste: ')
+valor2 = int(valor2)
+
+if valor1 > valor2:
+    print('Primeiro valor é maior!')
+elif valor1 < valor2:
+    print('Primeiro valor é menor!')
+else:
+    print('Os dois valores são iguais')
+```
+
+2) Lendo uma Lista e verificando se o nome existe nela
+
+```python
+nomes = ['Gabriel','Pedro','Vini','Dodo']
+meu_nome = input('Seu nome e? ')
+contador = 0 # para finalizar a passagem dentro do for
+for nome in nomes:
+    if meu_nome in nome: # se tiver o nome na lista
+         print('meu nome esta na lista!')
+         break # finaliza o for
+    elif contador == 3 and meu_nome not in nome: # se não tiver
+         print('Nao estou na lista!')
+    else:
+         pass
+    contador += 1
+# Quando o contador chega no tamanho da lista, testa o elif
+```
+---
+
+
