@@ -1,57 +1,39 @@
-## Como funciona o Laço For em Python
+# For em Python
 
-DEFINIÇÃO DE LAÇOS: é uma forma comum de fazer com que o computador automatize tarefas repetitivas
+---
 
-Como funciona o Laço FOR: 
-* dentro da construção do for ele irá continuar se:
-    * não for parado com um `break`
-    * não for parado por um `return`
-    * quando acabar os elementos da lista
-    * quando chegar no tamanho definido
+## Usando For em uma Lista
 
+Utilizamos o For para andarmos dentro de uma Lista e pegarmos individualmente os dados internos.
 
-Lendo uma lista de elementos com For e printar
+Assim como vimos no IF, usamos alguns testes condicionais para verificarmos:
 
 ```python
-# Lendo uma lista de nomes, um nome por vez
-nomes = ['Gabriel','Lili','Pedro']
-for nome in nomes:
-    print(nome)
-
-# Lendo uma lista de numeros, um numero por vez
-numeros = ['1','2','3','4','5']
-for numero in numeros:
-    print(numero)
+in # Verificar se o elemento está dentro da Lista
+not in # Verificar se o elemento NÃO está dentro da Lista
 ```
 
-Python possui várias ferramentas para listas de números
-* Usando a função `range()`
-    * com a função **range()** podemos criar elementos numéricos com limites entre dois valores definidos, o inicial e o final-1 
-* Usando a função `list()`
-    * com a função **list()** podemos criar uma lista dos números criados pelo range
+Com esse teste condicional, podemos andar por toda a Lista e imprimir os dados, como abaixo:
 
 ```python
-# lendo o range que começa com 1 e vai até 4 no For
-for valor in range(1,5):
-    print(valor)
+caracteres = ['a','b','c','d']
 
-# criando uma lista com esses valores
-valores = list(range(1,5))
-# Lendo cada valor da lista
-for valor in valores:
-    print(valor)
+for caracter in caracteres:
+    print("Letra: " + caracter)
+```
 
-# EXEMPLO TOTAL: 
-# colocando pares dentro de uma lista vazia
-pares = [] # inicialização da lista vazia
-for valor in range(1,11):
-    # colocando o valor par em uma variavel
-    par = valor*2
-    # adicionando o valor na lista com append()
-    pares.append(par)
-# podemos imprimir de várias formas
-print('print tipo 1: ', pares)
-print('print tipo 2: ')
-for par in pares:
-    print(par)
+No exemplo acima, sempre que tiver um **caracter** na lista de **caracteres** podemos pegar esse dado e imprimir
+
+Podemos agora modificar nossa Lista como quisermos:
+
+1) Removendo um item específico da Lista
+
+```python
+lista1 = ["Pepe","A","B","Pepe","C"]
+
+for item in lista1:
+    if "Pepe" in lista1:
+        lista1.remove("Pepe")
+print(lista1)
+# Saida: ["A","B","C"]
 ```
