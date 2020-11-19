@@ -22,6 +22,7 @@ Tipos de Condicionais:
 < # Verifica se é menor
 >= # Verifica se é maior ou igual
 <= # verifica se é menor ou igual
+% # Verifica se o valor resultante de uma divisão é 0 ou diferente de 0
 ```
 
 Quando testamos mais de uma condicional de uma vez:

@@ -96,4 +96,31 @@ print(lista)
 print("Tamanho da Lista armazenada em variavel: " + str(tamanho_lista)) #por ser numero deve transformar em String
 print("Tamanho da Lista direto no print: " + str(len(lista))) #por ser numero deve transformar em String
 
+#
+# CRIANDO UMA LISTA NUMERICA USANDO LIST()
+#
 
+lista5 = list(range(1,11)) #pega todos os numeros de 1 á 10
+print("\nCriando uma lista de 1 á 10 usando list() e range()")
+print(lista5)
+
+#
+# PEGANDO O VALOR MAIOR E MENOR VALOR DE UMA LISTA NUMÉRICA
+#
+
+lista6 = [1,2,3,4,5,6,7,8,9,10]
+minimo = min(lista6)
+maximo = max(lista6)
+print("\nPegando o Maximo e o Minimo de uma Lista")
+print(lista6)
+print("Valor Maximo da Lista: " + str(maximo))
+print("Valor Minimo da Lista: " + str(minimo))
+
+#
+# SOMANDO TODOS OS VALORES DE UMA LISTA NUMÉRICA
+# 
+
+soma = sum(lista6)
+print("\nSomando todos os valores de uma lista numérica")
+print(lista6)
+print("Soma de todos os valores: " + str(soma))

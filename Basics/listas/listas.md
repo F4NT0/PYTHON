@@ -225,151 +225,43 @@ print(str(len(lista))) #Saida: 4
 
 ---
 
-## Saidas de exemplo
+## Criando uma lista por um grupo de numeros
 
-Temos o seguinte código de exemplo completo dessas Funções e interações com as Listas
+Podemos criar uma lista utilizando a Função **list()**, onde podemos colocar dela uma Função chamada **range()** que vai possuir um valor inicial e um valor final + 1.
+
+Se quisermos construir uma Lista de valores de 1 á 10, criamos uma Função **range()** que vai de 1 á 11(10+1):
 
 ```python
-# ---------------------------
-# CRIANDO E UTILIZANDO LISTAS
-# ---------------------------
-
-# Criando uma Lista manualmente
-lista = ['A','B','C','D']
-
-# Criando uma Lista vazia
-lista2 = []
-
-# Imprimindo a Lista em formato Lista
+lista = list(range(1,11))
 print(lista)
-
-# Pegando o primeiro valor da Lista
-print("Primeiro valor da Lista: " + lista[0])
-
-# Pegando o ultimo valor da Lista
-print("Ultimo valor da Lista: " + lista[-1])
-
-#
-# ADICIONAR 
-#
-
-# Adicionando um valor no final da Lista
-lista.append('E')
-print("\nUltimo valor da Lista após o append(): " + lista[-1])
-print(lista)
-
-# Adicionando um valor na primeira posição de lista2
-lista2.insert(0,'A')
-print("\nPrimeiro valor da Lista2 usado o insert(): " + lista2[0])
-print(lista2)
-
-#
-# REMOVER
-#
-
-# Retirando o ultimo valor da lista usando a função pop()
-valor_retirado = lista.pop()
-print("\nValor Retirado do final da Lista: " + valor_retirado)
-print(lista)
-
-# Retirando um valor específico da lista pela posição usando pop()
-valor_retirado = lista.pop(2)
-print("\nValor Retirado da Posição 2: " + valor_retirado)
-print(lista)
-
-# Removendo um valor específico da Lista usando a Função remove()
-valor_retirado = lista.remove('A')
-print("\nUsado o remove() para retirar o valor A")
-print(lista)
-
-#
-# ORDENAÇÃO
-#
-
-# Ordenando uma lista de forma permanente e crescente(alfabeto)
-lista = ['B','C','A','D']
-lista.sort()
-print("\nOrdenado permanentemente a lista de forma alfabetica e crescente")
-print(lista)
-
-# Ordenando uma lista de forma permanente e crescente(numeros)
-lista2 = [3,2,1,4]
-lista2.sort()
-print("\nOrdenando permanentemente a lista de forma numerica e crescente")
-print(lista2)
-
-# Ordenando de forma decrescente utilizando o Atributo reverse = True
-lista3 = [4,3,2,1]
-lista3.sort(reverse = True)
-print("\nOrdenando permanentemente a lista de forma decrescente")
-print(lista3)
-
-# Invertendo a Lista permanentemente usando a Função reverse()
-lista3.reverse()
-print("\nReordenando de forma inversa a Lista anterior")
-print(lista3)
-
-# Ordenando de forma temporária a Lista
-lista4 = ['B','C','A','D']
-print("\nOrdenando de forma temporária sem mexer na lista original")
-print(sorted(lista4))
-print("Original: ")
-print(lista4)
- 
-#
-# TAMANHO DA LISTA
-#
-
-# Pegando o tamanho da Lista e salvando esse valor, tamanho da lista é o numero de elementos não as posições
-
-tamanho_lista = len(lista)
-print("\nPegando o tamanho da Lista")
-print(lista)
-print("Tamanho da Lista armazenada em variavel: " + str(tamanho_lista)) #por ser numero deve transformar em String
-print("Tamanho da Lista direto no print: " + str(len(lista))) #por ser numero deve transformar em String
+#Saida: [1,2,3,4,5,6,7,8,9,10]
 ```
 
-Esse código vai ter as Seguinte informações no Terminal, usando python 3:
+---
 
-```text
-['A', 'B', 'C', 'D']
-Primeiro valor da Lista: A
-Ultimo valor da Lista: D
+## Maximo e o Mínimo de uma lista
 
-Ultimo valor da Lista após o append(): E
-['A', 'B', 'C', 'D', 'E']
+Usamos as funções **max()** e **min()** em listas numéricas para podermos pegar o maior e o menor valor da lista
 
-Primeiro valor da Lista2 usado o insert(): A
-['A']
+```python
+lista6 = [1,2,3,4,5,6,7,8,9,10]
+minimo = min(lista6)
+maximo = max(lista6)
+print("Valor Maximo da Lista: " + str(maximo))
+print("Valor Minimo da Lista: " + str(minimo))
+```
 
-Valor Retirado do final da Lista: E
-['A', 'B', 'C', 'D']
+A saída tem que sair usando a Função **str()** porque é um valor numérico.
 
-Valor Retirado da Posição 2: C
-['A', 'B', 'D']
+---
 
-Usado o remove() para retirar o valor A
-['B', 'D']
+## Somando todos os valores de uma lista
 
-Ordenado permanentemente a lista de forma alfabetica e crescente
-['A', 'B', 'C', 'D']
+Usamos a Função **sum()** para somar todos os valores numéricos de uma lista numérica
 
-Ordenando permanentemente a lista de forma numerica e crescente
-[1, 2, 3, 4]
-
-Ordenando permanentemente a lista de forma decrescente
-[4, 3, 2, 1]
-
-Reordenando de forma inversa a Lista anterior
-[1, 2, 3, 4]
-
-Ordenando de forma temporária sem mexer na lista original
-['A', 'B', 'C', 'D']
-Original: 
-['B', 'C', 'A', 'D']
-
-Pegando o tamanho da Lista
-['A', 'B', 'C', 'D']
-Tamanho da Lista armazenada em variavel: 4
-Tamanho da Lista direto no print: 4
+```python
+soma = sum(lista6)
+print("\nSomando todos os valores de uma lista numérica")
+print(lista6)
+print("Soma de todos os valores: " + str(soma))
 ```

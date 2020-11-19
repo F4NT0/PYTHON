@@ -56,3 +56,22 @@ for number in range(1,11):
     if number%2 != 0:
         lista6.append(number)
 print(lista6)
+
+# Transformando todos os números ao quadrado
+
+values = [1,2,3,4,5,6,7,8]
+double = []
+
+for number in values:
+    number = number**2
+    double.append(number)
+print(double)
+
+# Pegando um pedaço de uma lista
+
+listaTotal = [1,2,3,4,5,6,7,8,9,10]
+
+for number in listaTotal[:5]:
+    print("Numero: " + str(number))
+
+# 
