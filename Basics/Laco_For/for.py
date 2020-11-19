@@ -18,3 +18,11 @@ valor = 0
 for i in range(maximo):
     valor = valor + 1
 print(valor)
+
+# Pegando o valor do i para somar
+
+base = 0 
+
+for i in range(5):
+    base = base + i
+print(base)

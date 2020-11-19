@@ -188,7 +188,7 @@ for i in range(maximo):
 print(valor)
 ```
 
----
+--- 
 
 
 

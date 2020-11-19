@@ -1,53 +1,35 @@
-# TESTE DO LAÇO WHILE
+# ---------------
+# TESTE DE WHILE
+# ---------------
 
-# Se desejar testar um while infinito, descomente abaixo
+# Loop infinito
 
-# booleano = True
-# valor = 0
-# while booleano:
-#     valor += 1
-#     print('Valor agora é: ',str(valor))
+# while True:
+#     print("Loop Infinito")
 
-# WHILE FINITO NATURAL
-print('WHILE COM ALTERACAO DE VALOR')
+# Somando até chegar em um valor específico
+value = 0
 
-valor = 2
-contador = 1
+while value < 10:
+    value = value + 1
+print(value)
 
-while valor > 0:
-    print('Interacao do while numero ',str(contador))
-    contador += 1
-    valor -= 1
+# Transformando Decimal em Binário
 
-# WHILE ALTERANDO O VALOR BOOLEANO
+decimal = 10
+binario = []
 
-print('WHILE COM ALTERACAO DE VALOR BOOLEANO')
+while decimal > 0:
+    binario.append(decimal%2)
+    decimal  = int(decimal/2)
+print(binario)
 
-booleano = True
+# Transformando Binário para Decimal
 
-while booleano:
-    stop = input('Deseja parar o While? S/N : ')
-    
-    if stop == 'S' or stop == 's':
-        print('Parando o While...')
-        booleano = False
-    elif stop == 'N' or stop == 'n':
-        print('Continuando o While...')
-    else:
-        print('Valor não aceito!')
-        break
+novo_decimal = 0
+for i in range(len(binario)):
+    if binario[i] == 1:
+        novo_decimal = novo_decimal + 2**i
+print(novo_decimal)
 
-# TESTANDO O CONTINUE
-
-booleano = True
-while booleano:
-    if booleano == True:
-        parada = input('Deseja iniciar de novo? S/N : ')
-        if parada == 'S' or parada == 's':
-            continue
-        elif parada == 'N' or parada == 'n':
-            booleano = False
-        else:
-            print('Entrada invalida! encerrando...')
-            break
-
+# 
